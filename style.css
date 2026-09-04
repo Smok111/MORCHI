@@ -92,7 +92,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px 0;
     perspective: 1000px;
 }
 
@@ -116,9 +116,9 @@ body {
 /* El Sobre */
 .envelope-wrapper {
     position: relative;
-    width: 95vw;
-    max-width: 380px;
-    height: 250px;
+    width: 100vw;
+    max-width: 420px;
+    height: 270px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,8 +144,8 @@ body {
 
 /* Base (Mobile) - usa calc para ajustarse al sobre */
 .flap.top { 
-    border-width: 125px calc(95vw / 2); 
-    max-width: 380px;
+    border-width: 135px 50vw; 
+    max-width: 420px;
     top: 0; 
     border-top-color: var(--env-flap); 
     z-index: 4; 
@@ -153,19 +153,19 @@ body {
     transition: transform 1s ease-in-out, z-index 1s; 
 }
 .flap.left { 
-    border-width: 125px 0 125px calc(95vw / 2); 
+    border-width: 135px 0 135px 50vw; 
     left: 0; 
     border-left-color: #631021; 
     z-index: 2; 
 }
 .flap.right { 
-    border-width: 125px calc(95vw / 2) 125px 0; 
+    border-width: 135px 50vw 135px 0; 
     right: 0; 
     border-right-color: #631021; 
     z-index: 2; 
 }
 .flap.bottom { 
-    border-width: 0 calc(95vw / 2) 125px calc(95vw / 2); 
+    border-width: 0 50vw 135px 50vw; 
     bottom: 0; 
     border-bottom-color: var(--env-base); 
     z-index: 3; 
